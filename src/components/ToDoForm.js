@@ -33,12 +33,11 @@ export const ToDoForm = (props) => {
                 </>
             ) : (
                 <>
-                    <input type="text" placeholder="Add a to do" value={input} name="text" className="to-do-input" 
+                    <input type="text" placeholder="Add a task" value={input} name="text" className="to-do-input" 
                     onChange={handleChange} ref={inputRef}/>
                     <button className="to-do-button">Add To Do</button>
                 </>
             )}
-            
         </form>
     )
 }

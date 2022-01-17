@@ -63,6 +63,18 @@ h1 {
   text-transform: capitalize;
 }
 
+.to-do-reset-button {
+  padding: 16px;
+  border: none;
+  border-radius: 0 4px 4px 0;
+  cursor: pointer;
+  outline: none;
+  background: rgba(93, 12, 255, 1);
+  color: #fff;
+  text-transform: capitalize;
+  margin-bottom: 32px;
+}
+
 .to-do-input.edit {
   border: 2px solid #149fff;
 }
