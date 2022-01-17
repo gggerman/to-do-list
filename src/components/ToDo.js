@@ -23,8 +23,8 @@ export const ToDo = ({ toDos, filteredToDos, completeToDo, removeToDo, updateToD
     }
 
     return filteredToDos.length ? filteredToDos.map((toDo, index) => (
-        <div className={toDo.isComplete ? 'to-do-row complete' : 'to-do-row'} key={index} onClick={() => completeToDo(toDo.id)}>
-            <div key={toDo.id}>
+        <div className={toDo.isComplete ? 'to-do-row complete' : 'to-do-row'} key={index} >
+            <div onClick={() => completeToDo(toDo.id)} key={toDo.id}>
                 {toDo.text}
             </div>
             <div className="icons">
@@ -33,8 +33,8 @@ export const ToDo = ({ toDos, filteredToDos, completeToDo, removeToDo, updateToD
             </div>
         </div>
     )) : toDos.map((toDo, index) => (
-        <div className={toDo.isComplete ? 'to-do-row complete' : 'to-do-row'} key={index} onClick={() => completeToDo(toDo.id)}>
-            <div key={toDo.id}>
+        <div className={toDo.isComplete ? 'to-do-row complete' : 'to-do-row'} key={index} >
+            <div onClick={() => completeToDo(toDo.id)} key={toDo.id}>
                 {toDo.text}
             </div>
             <div className="icons">

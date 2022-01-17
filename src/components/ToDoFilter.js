@@ -1,4 +1,4 @@
-import React, { useState, useEffect, useRef } from 'react'
+import React, { useState } from 'react'
 
 export const ToDoFilter = (props) => {
     const [input, setInput] = useState(props.edit ? props.edit.value : '');

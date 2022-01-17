@@ -7,7 +7,11 @@ export const ToDoForm = (props) => {
 
     useEffect(() => {
         inputRef.current.focus()
-    })
+    });
+
+    const handleChange = (e) => {
+        setInput(e.target.value);
+    }
 
     const handleSubmit = (e) => {
         e.preventDefault();
@@ -18,10 +22,6 @@ export const ToDoForm = (props) => {
         })
 
         setInput('');
-    }
-
-    const handleChange = (e) => {
-        setInput(e.target.value);
     }
 
     return (
