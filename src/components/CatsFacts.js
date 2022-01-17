@@ -10,14 +10,17 @@ export const CatsFacts = (props) => {
     const handleSubmit = (e) => {
         e.preventDefault();
 
-        props.onSubmit(input)
+        if (input) {
+            props.onSubmit(input)
+        }
 
         setInput('');
     }
 
     return (
         <form className="to-do-form" onSubmit={handleSubmit}>
-            <input className="to-do-input" type="number" min="0" max="332" placeholder="Cats fatcs" value={input} name="text" onChange={handleChange}/>
+            <input className="to-do-input" type="number" min="0" max="332" placeholder="Random cats fatcs..." 
+            value={input} name="text" onChange={handleChange}/>
             <button className="to-do-button">Add facts</button>
         </form>
     )

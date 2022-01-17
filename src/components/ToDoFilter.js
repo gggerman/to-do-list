@@ -18,9 +18,9 @@ export const ToDoFilter = (props) => {
     return (
         <>
             <form className="to-do-form" onSubmit={handleSubmit}>
-                        <input type="text" placeholder="Filter your tasks" value={input} name="text"
-                        className="to-do-input" onChange={handleChange}/>
-                        <button className="to-do-button">Filter</button>          
+                    <input type="text" placeholder="Filter your To-Dos..." value={input} name="text"
+                    className="to-do-input" onChange={handleChange}/>
+                    <button className="to-do-button">Filter</button>          
             </form>
         </>
     )

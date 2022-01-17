@@ -28,14 +28,14 @@ export const ToDoForm = (props) => {
         <form className="to-do-form" onSubmit={handleSubmit}>
             {props.edit ? (
                 <>
-                    <input type="text" placeholder="Update your task" value={input} name="text" className="to-do-input edit" onChange={handleChange} ref={inputRef}/>
+                    <input type="text" placeholder="Update your To-Do..." value={input} name="text" className="to-do-input edit" onChange={handleChange} ref={inputRef}/>
                     <button className="to-do-button edit">Update</button>
                 </>
             ) : (
                 <>
-                    <input type="text" placeholder="Add a task" value={input} name="text" className="to-do-input" 
+                    <input type="text" placeholder="Add a To-Do..." value={input} name="text" className="to-do-input" 
                     onChange={handleChange} ref={inputRef}/>
-                    <button className="to-do-button">Add To Do</button>
+                    <button className="to-do-button">Add To-Do</button>
                 </>
             )}
         </form>
